@@ -13,14 +13,18 @@ box-shadow: 0.1em 0.1em 5em 0.5px black;
 background-color: white;
 }
 body{
-  background-image: linear-gradient(90deg,#bdc3c7  , #2c3e50);
+  background-image: linear-gradient(90deg,#bdc3c7 , #2c3e50);
 
+}::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 1.2em;/* Firefox */
 }
+
 #title{
-  font-family: "Do Hyeon";
+  font-family: Sen;
   text-align: center;
   font-size: 4em;
 }
+
 .cuntainer{
   border-style: solid;
   border-color: #c6c8cc;
@@ -29,7 +33,8 @@ body{
 }
 #description{
   font-size: 1.5em;
-  margin: 1em;
+
+  font-family: Sen;
 }
 .margin{
   margin:1em;
