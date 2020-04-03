@@ -4,11 +4,94 @@
     <meta charset="utf-8">
     <title>
     Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <h1 id="title">Financial Survey Form</h1>
-    <p id="description">As the situation of LBTQ is bleak in Pakistan and other Muslim countries. I am making this form to get your opinion:</p>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
 
+    <main>
+      <header>
+        <h1 id="title">Mobile Developer's Opinion</h1>
+        <p id="description">Some devs are all for native android/ios development. On the other hand, some folks love hybrid options. What side are you on:</p>
+      </header>
+    <form id="survey-form">
+      <div class ="margin"><label for="name" id="name-label">Your name:</label>
+      <input class="cuntainer" type="text" placeholder="Full Name" name ="name" id="name" required></div>
+      <div class="margin">
+      <label for="email" id="email-label">Your email:</label>
+      <input class="cuntainer" type="email" placeholder="email address" name ="email" id="email" required></div>
+      <div class="margin">
+        <label  for="dropdown" id="dropdown-label">Your prefered environment:</label>
+        <select class="cuntainer" id="dropdown" name="dropdown">
+          <option value="native-android">Native Android</option>
+          <option value="native-ios">Native iOS</option>
+          <option value="xamarin-forms">Xamarin Forms</option>
+          <option value="react-native">React Native</option>
+          <option value="flutter">Flutter</option>
+        </select>
+      </div>
+
+      <div class="margin">
+        <p>Select the programming languagges you know:</p>
+        <div class="">
+          <input type="checkbox" name="lang" id="java" value="java">
+          <label for="java">Java</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="lang" id="javascript" value="javascript">
+          <label for="javascript">JavaScript</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="lang" id="swift" value="swift">
+          <label for="swift">Swift</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="lang" id="dart" value="dart">
+          <label for="dart">Dart</label>
+        </div>
+      </div>
+      <div class="margin">
+        <label for="number" id="number-label">Years of experience:</label>
+        <input class="cuntainer"type="number" placeholder="Years" name ="number" id="number" min="1" max="10">
+      </div>
+
+      <div class="margin">
+        <p>Other environments you have tried:</p>
+        <div class="">
+          <input type="radio" name="platform"id="android-native" value="android-native">
+          <label for="android-native">Native Android</label>
+        </div>
+<div class="">
+  <input type="radio" name="platform"id="ios-native" value="ios-native">
+  <label for="ios-native">Native iOS</label>
+</div>
+
+<div class="">
+  <input type="radio" name="platform"id="xamarin-forms" value="xamarin-forms">
+  <label for="xamarin-forms">Xamarin Forms</label>
+</div>
+
+<div class="">
+  <input type="radio" name="platform"id="react-native" value="react-native">
+  <label for="react-native">React Native</label>
+</div>
+
+<div class="">
+  <input type="radio" name="platform"id="flutter" value="flutter">
+  <label for="flutter">Flutter</label>
+</div>
+      </div>
+      </div>
+      <label for="textarea" class="margin">For additional comments:</label>
+      <textarea   name="name" id ="textarea"rows="8" cols="80" placeholder="Start writing here"></textarea>
+      <input class="margin" type="submit" id="submit" value="Submit">
+
+    </form>
+  </main>
 
   </body>
 </html>
